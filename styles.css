@@ -1,0 +1,74 @@
+/* Setting the default font, removing margins and padding, setting the box-sizing to border-box, and setting a light gray background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+/* Styling the main container with flexbox to center its children, and adding some padding */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling all boxes (the main box, feature items, and call to action) with a white background, rounded corners, a subtle shadow, and some margin and padding */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Giving the main box a light gray background and blue text */
+.main-box {
+    background-color: #f9f9f9;
+    color: #007BFF;
+}
+
+/* Setting up a grid layout for the features, with three items per row, some gap between items, and some padding */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Styling each feature item with flexbox to center its content, and giving it a light blue background */
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f7ff;
+}
+
+/* Styling the call to action box with flexbox to center its content, adding some margin at the top, and giving it a dark blue background and white text */
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Styling the call to action link with white text, no underline, some padding, a white border, rounded corners, and some margin at the top */
+.cta a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
